@@ -59,7 +59,7 @@ const HeroSection = () => {
             </motion.h1>
             <motion.p
               className={cn(
-                "text-xl text-zinc-400 mb-6",
+                "text-xl dark:text-zinc-400 mb-6",
                 poppinsFont.className
               )}
               initial={{ y: 20, opacity: 0 }}
@@ -80,7 +80,7 @@ const HeroSection = () => {
             </motion.div>
             <motion.p
               className={cn(
-                "text-base text-zinc-400 mb-8 max-w-2xl mx-auto lg:mx-0",
+                "text-base dark:text-zinc-400 mb-8 max-w-2xl mx-auto lg:mx-0",
                 poppinsFont.className
               )}
               initial={{ y: 20, opacity: 0 }}
@@ -109,16 +109,16 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className={cn("text-zinc-300", poppinsFont.className)}
+            className={cn("dark:text-zinc-300", poppinsFont.className)}
           >
             {activeSection === 'developer' && (
-              <p>Specializing in full-stack web development with a focus on React, Node.js, and modern JavaScript frameworks. Constantly exploring new technologies to create efficient and scalable solutions.</p>
+              <p>Specializing in full-stack web development with a focus on React, Node.js, and modern JavaScript frameworks. I'm always eager to learn the coolest skills and latest technologies out there.</p>
             )}
             {activeSection === 'projects' && (
-              <p>Working on various projects including a real-time collaboration tool, an AI-powered content generator, and contributing to open-source libraries. Each project is an opportunity to learn and innovate.</p>
+              <p>Working on projects that seamlessly integrate AI with a focus on clean, minimalistic UI/UX. Each project is an opportunity to innovate, exploring new possibilities while maintaining simplicity and elegance in design.</p>
             )}
             {activeSection === 'education' && (
-              <p>Currently pursuing a B.Tech in Computer Science Engineering at The NorthCap University, Gurgaon. Engaged in coursework covering algorithms, data structures, machine learning, and software engineering principles.</p>
+              <p>Currently pursuing my B.Tech in Computer Science Engineering at The NorthCap University, Gurgaon. I'm open to collaborating and sharing ideas, so don't hesitate to drop me a message and let's build something great together! </p>
             )}
           </motion.div>
         </motion.div>
@@ -141,7 +141,7 @@ const SocialIcon = ({ href, icon: Icon }: any) => (
 
 const InteractiveIcon = ({ icon: Icon, label, isActive, onClick }: any) => (
   <motion.div
-    className={`flex flex-col items-center cursor-pointer ${isActive ? 'text-blue-400' : 'text-zinc-400'}`}
+    className={`flex flex-col items-center cursor-pointer ${isActive ? 'text-blue-800' : 'dark:text-zinc-400'}`}
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.95 }}
     onClick={onClick}

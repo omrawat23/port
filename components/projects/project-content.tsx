@@ -37,9 +37,11 @@ export const projectsContent: projectData[] = [
       "React",
       "Node.js",
       "Express.js",
-      "MongoDb",
-      "Firebase storage",
+      "Mongoose",
+      "MongoDB",
+      "bCrypt",
       "JWT",
+      "Tailwind CSS",
     ],
     link: {
       github: "https://github.com/omrawat23/guts",
@@ -95,7 +97,7 @@ export const projectsContent: projectData[] = [
   //     "Shadcn UI",
   //   ],
   //   link: {
-  //     github: "https://github.com/tanayvaswani/frello",
+  //     github: "https://github.com/omrawat23/frello",
   //     youtube: "",
   //     live: "",
   //   },

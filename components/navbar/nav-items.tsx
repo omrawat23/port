@@ -1,4 +1,6 @@
 import { GithubIcon, LinkedinIcon, Mail, Twitter } from "lucide-react";
+import ThemeToggle from "@/components/theme-toggle"; 
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 export const navItems = [
   {
@@ -21,6 +23,7 @@ export const navItems = [
     hash: "/contact",
     target: "",
   },
+
   // {
   //   name: <GithubIcon className="h-5 w-5" />,
   //   hash: "https://github.com/omrawat23",
