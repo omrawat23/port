@@ -16,18 +16,22 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
-    animate(
-      "span",
-      {
-        opacity: 1,
-      },
-      {
-        duration: 2,
-        delay: stagger(delay),
-      }
-    );
-  }, [scope.current]);
+    // Ensure animate function is called correctly
+    if (scope.current) {
+      animate(
+        "span",
+        {
+          opacity: 1,
+        },
+        {
+          duration: 2,
+          delay: stagger(delay),
+        }
+      );
+    }
+  }, [scope.current, animate, delay]); // Add animate and delay to the dependency array
 
   const renderWords = () => {
     return (
