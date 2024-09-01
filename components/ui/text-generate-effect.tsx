@@ -31,7 +31,7 @@ export const TextGenerateEffect = ({
         }
       );
     }
-  }, [scope.current, animate, delay]); // Add animate and delay to the dependency array
+  }, [animate, delay]); // Add animate and delay to the dependency array
 
   const renderWords = () => {
     return (
