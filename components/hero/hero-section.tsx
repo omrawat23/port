@@ -121,7 +121,8 @@ const HeroSection = () => {
             )}
           </motion.div>
         </motion.div>
-
+        
+        <a href="/contact">
         <motion.button
           className="mt-12 px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 mx-auto block"
           whileHover={{ scale: 1.05 }}
@@ -132,6 +133,7 @@ const HeroSection = () => {
         >
           Get in Touch
         </motion.button>
+        </a>
       </div>
     </div>
   );
