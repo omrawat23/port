@@ -21,10 +21,10 @@ const HeroSection = () => {
   const [activeSection, setActiveSection] = useState('developer');
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center lg:mt-[-200px]">
+    <div className="min-h-screen flex flex-col items-center justify-center lg:mt-[-200px] mt-[-44px]">
       {/* Image for Large Screens */}
       <motion.div
-        className="mb-12 relative inline-block lg:mb-36"
+        className="relative inline-block lg:mb-36"
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
