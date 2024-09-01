@@ -52,11 +52,12 @@ export const projectsContent: projectData[] = [
     description:
       "A responsive e-commerce store using React and Node.js, featuring Stripe integration for secure payments. The store offers seamless navigation, a user-friendly interface, and efficient product management. The project aims to deliver a secure, engaging online shopping experience and a easy way to try on shoes from the comfort of your home by integrating DeepAr.",
     tags: [
-      "Typescript",
-      "Next.js",
-      "TailwindCSS",
-      "Shadcn UI",
-      "Framer Motion",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "Redux toolkit",
+      "JWT",
     ],
     link: {
       github: "https://github.com/omrawat23/ai-shoes",
