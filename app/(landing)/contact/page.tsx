@@ -40,7 +40,7 @@ const BlogsPage = () => {
     e.preventDefault();
 
     if (!form.name || !form.email || !form.message) {
-      toast.error("Please fill out all fields before submitting."); // Show error toast
+      toast.error("Please fill out all fields before submitting.");
       return;
     }
 
@@ -52,7 +52,7 @@ const BlogsPage = () => {
 
     if (!serviceId || !templateId || !publicKey) {
       setLoading(false);
-      toast.error("EmailJS environment variables are not properly set."); // Show error toast
+      toast.error("EmailJS environment variables are not properly set.");
       return;
     }
 
@@ -72,7 +72,7 @@ const BlogsPage = () => {
       .then(
         () => {
           setLoading(false);
-          toast.success("Thank you. I will get back to you as soon as possible."); // Show success toast
+          toast.success("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -83,17 +83,17 @@ const BlogsPage = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-          toast.error("Ahh, something went wrong. Please try again."); // Show error toast
+          toast.error("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center h-full md:max-w-screen-xl md:mx-auto px-6 md:px-0 mt-20">
-      <Toaster /> 
+    <div className="w-full flex flex-col items-center justify-center h-full px-4 md:px-6 lg:max-w-screen-xl lg:mx-auto mt-20 md:mt-20">
+      <Toaster />
       <h1
         className={cn(
-          "text-3xl md:text-5xl font-semibold md:max-w-screen-md mb-6",
+          "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4 md:mb-6",
           headingFont.className
         )}
       >
@@ -103,50 +103,50 @@ const BlogsPage = () => {
       <motion.form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="w-[600px] bg-zinc-800 p-8 rounded-2xl shadow-xl flex flex-col gap-6 mb-20"
+        className="w-full max-w-lg md:max-w-2xl bg-zinc-800 p-6 md:p-8 rounded-2xl shadow-xl flex flex-col gap-4 md:gap-6 mb-44 md:mb-16"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <label className="flex flex-col">
-          <span className="text-[#E4E4E7] font-medium mb-4">Your Name</span>
+          <span className="text-[#E4E4E7] font-medium mb-2 md:mb-4">Your Name</span>
           <input
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
             placeholder="What's your good name?"
-            className="bg-[#E4E4E7] py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
+            className="bg-[#E4E4E7] py-2 md:py-4 px-4 md:px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
           />
         </label>
 
         <label className="flex flex-col">
-          <span className="text-[#E4E4E7] font-medium mb-4">Your Email</span>
+          <span className="text-[#E4E4E7] font-medium mb-2 md:mb-4">Your Email</span>
           <input
             type="email"
             name="email"
             value={form.email}
             onChange={handleChange}
             placeholder="What's your web address?"
-            className="bg-[#E4E4E7] py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
+            className="bg-[#E4E4E7] py-2 md:py-4 px-4 md:px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
           />
         </label>
 
         <label className="flex flex-col">
-          <span className="text-[#E4E4E7] font-medium mb-4">Your Message</span>
+          <span className="text-[#E4E4E7] font-medium mb-2 md:mb-4">Your Message</span>
           <textarea
-            rows={7}
+            rows={5}
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeholder="What you want to say?"
-            className="bg-[#E4E4E7] py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
+            placeholder="What do you want to say?"
+            className="bg-[#E4E4E7] py-2 md:py-4 px-4 md:px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
           />
         </label>
 
         <motion.button
           type="submit"
-          className="bg-blue-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md hover:bg-blue-500/90"
+          className="bg-blue-500 py-2 md:py-3 px-4 md:px-8 rounded-xl outline-none w-full md:w-fit text-white font-bold shadow-md hover:bg-blue-500/90"
           whileHover={{ scale: 1.05 }}
           disabled={loading}
         >
