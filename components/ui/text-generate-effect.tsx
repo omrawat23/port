@@ -15,7 +15,7 @@ export const TextGenerateEffect = ({
   textColor: string;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
 
   useEffect(() => {
     // Ensure animate function is called correctly
@@ -31,7 +31,7 @@ export const TextGenerateEffect = ({
         }
       );
     }
-  }, [animate, delay]); // Add animate and delay to the dependency array
+  }, [scope, animate, delay]); // Add scope, animate, and delay to the dependency array
 
   const renderWords = () => {
     return (
@@ -53,7 +53,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className=" dark:text-zinc-200 text-black text-3xl md:text-5xl leading-snug tracking-wide">
+        <div className="dark:text-zinc-200 text-black text-3xl md:text-5xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

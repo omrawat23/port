@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { GithubIcon, LinkedinIcon, Mail, Code, Briefcase, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
-import Image from 'next/image';
+import Image from "next/image";
 
 const headingFont = localFont({
   src: "../../public/fonts/font.woff2",
@@ -19,7 +19,7 @@ const poppinsFont = Poppins({
 });
 
 const HeroSection = () => {
-  const [activeSection, setActiveSection] = useState('developer');
+  const [activeSection, setActiveSection] = useState("developer");
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center lg:mt-[-200px] mt-[-44px]">
@@ -31,11 +31,11 @@ const HeroSection = () => {
         transition={{ delay: 0.2, duration: 0.8 }}
       >
         <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 absolute blur-xl opacity-50 -z-10 lg:hidden mt-10"></div>
-        <Image 
-        width={100}
-        height={100}
-          src="/om.jpg" 
-          alt="Om Rawat" 
+        <Image
+          width={100}
+          height={100}
+          src="/om.jpg"
+          alt="Om Rawat"
           className="w-32 h-32 rounded-full object-cover border-4 border-zinc-700 lg:hidden mt-10"
         />
       </motion.div>
@@ -43,7 +43,7 @@ const HeroSection = () => {
       <div className="max-w-4xl w-full px-6 py-12 lg:flex lg:items-center lg:justify-center lg:gap-12">
         {/* Left Section for Large Screens */}
         <div className="lg:w-1/2 lg:flex lg:items-center lg:justify-center lg:text-left">
-          <motion.div 
+          <motion.div
             className="text-center lg:text-left"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -96,16 +96,16 @@ const HeroSection = () => {
         </div>
 
         {/* Right Section for Large Screens */}
-        <motion.div 
+        <motion.div
           className="rounded-lg p-6 md:p-8 bg-zinc-800/50 backdrop-blur-sm lg:w-1/2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
         >
           <div className="flex justify-around mb-8">
-            <InteractiveIcon icon={Code} label="Developer" isActive={activeSection === 'developer'} onClick={() => setActiveSection('developer')} />
-            <InteractiveIcon icon={Briefcase} label="Projects" isActive={activeSection === 'projects'} onClick={() => setActiveSection('projects')} />
-            <InteractiveIcon icon={GraduationCap} label="Education" isActive={activeSection === 'education'} onClick={() => setActiveSection('education')} />
+            <InteractiveIcon icon={Code} label="Developer" isActive={activeSection === "developer"} onClick={() => setActiveSection("developer")} />
+            <InteractiveIcon icon={Briefcase} label="Projects" isActive={activeSection === "projects"} onClick={() => setActiveSection("projects")} />
+            <InteractiveIcon icon={GraduationCap} label="Education" isActive={activeSection === "education"} onClick={() => setActiveSection("education")} />
           </div>
           <motion.div
             key={activeSection}
@@ -114,14 +114,14 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className={cn("dark:text-zinc-300", poppinsFont.className)}
           >
-            {activeSection === 'developer' && (
-              <p>Specializing in full-stack web development with a focus on React, Node.js, and modern JavaScript frameworks. I'm always eager to learn the coolest skills and latest technologies out there.</p>
+            {activeSection === "developer" && (
+              <p>Specializing in full-stack web development with a focus on React, Node.js, and modern JavaScript frameworks. I&apos;m always eager to learn the coolest skills and latest technologies out there.</p>
             )}
-            {activeSection === 'projects' && (
+            {activeSection === "projects" && (
               <p>Working on projects that seamlessly integrate AI with a focus on clean, minimalistic UI/UX. Each project is an opportunity to innovate, exploring new possibilities while maintaining simplicity and elegance in design.</p>
             )}
-            {activeSection === 'education' && (
-              <p>Currently pursuing my B.Tech in Computer Science Engineering at The NorthCap University, Gurgaon. I'm open to collaborating and sharing ideas, so don't hesitate to drop me a message and let's build something great together! </p>
+            {activeSection === "education" && (
+              <p>Currently pursuing my B.Tech in Computer Science Engineering at The NorthCap University, Gurgaon. I&apos;m open to collaborating and sharing ideas, so don&apos;t hesitate to drop me a message and let&apos;s build something great together!</p>
             )}
           </motion.div>
         </motion.div>
@@ -130,7 +130,7 @@ const HeroSection = () => {
   );
 };
 
-const SocialIcon = ({ href, icon: Icon }: any) => (
+const SocialIcon = ({ href, icon: Icon }: { href: string; icon: any }) => (
   <Link href={href} target="_blank" rel="noopener noreferrer">
     <motion.div
       className="p-2 bg-zinc-800 rounded-full"
@@ -142,9 +142,9 @@ const SocialIcon = ({ href, icon: Icon }: any) => (
   </Link>
 );
 
-const InteractiveIcon = ({ icon: Icon, label, isActive, onClick }: any) => (
+const InteractiveIcon = ({ icon: Icon, label, isActive, onClick }: { icon: any; label: string; isActive: boolean; onClick: () => void }) => (
   <motion.div
-    className={`flex flex-col items-center cursor-pointer ${isActive ? 'text-blue-800' : 'dark:text-zinc-400'}`}
+    className={`flex flex-col items-center cursor-pointer ${isActive ? "text-blue-800" : "dark:text-zinc-400"}`}
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.95 }}
     onClick={onClick}
