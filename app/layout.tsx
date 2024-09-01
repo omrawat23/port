@@ -24,7 +24,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Navbar />
             <ThemeToggle /> {/* Add the ThemeToggle component here */}
-            <main className="pt-16 pb-48">{children}</main>
+            <main className="pt-16">{children}</main>
             <Footer />
           </ActiveSectionContextProvider>
         </ThemeProvider>

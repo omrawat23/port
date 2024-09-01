@@ -103,7 +103,7 @@ const BlogsPage = () => {
       <motion.form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="w-full md:max-w-screen-md bg-zinc-800 p-6 rounded-lg shadow-md flex flex-col gap-8"
+        className="w-full md:max-w-screen-md bg-zinc-800 p-6 rounded-lg shadow-md flex flex-col gap-8 mb-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
