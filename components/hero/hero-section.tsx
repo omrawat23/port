@@ -29,11 +29,11 @@ const HeroSection = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
       >
-        <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 absolute blur-xl opacity-50 -z-10 lg:hidden"></div>
+        <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 absolute blur-xl opacity-50 -z-10 lg:hidden mt-10"></div>
         <img 
           src="/om.jpg" 
           alt="Om Rawat" 
-          className="w-32 h-32 rounded-full object-cover border-4 border-zinc-700 lg:hidden"
+          className="w-32 h-32 rounded-full object-cover border-4 border-zinc-700 lg:hidden mt-10"
         />
       </motion.div>
 
