@@ -11,6 +11,25 @@ export type projectData = {
 
 export const projectsContent: projectData[] = [
   {
+    title: "Feedbackify",
+    description:
+      "Feedbackify is a SaaS product that allows users to integrate a feedback widget into their applications. It provides a seamless experience for collecting and managing user feedback, ensuring secure data handling and offering an intuitive dashboard for insights.",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "Drizzle ORM",
+      "Supabase",
+      "ClerkAuth",
+      "TailwindCSS",
+      "Shadcn UI",
+    ],
+    link: {
+      github: "https://github.com/omrawat23/feedbacify-landing.git",
+      youtube: "",
+      live: "https://feedbacify-landing.vercel.app/",
+    },
+  },
+  {
     title: "CodeAssist",
     description:
       "CodeAssist is an intelligent coding assistant designed to enhance developer productivity by leveraging AI-driven insights. It connects with the Gemini model to provide solutions, recommendations, and code snippets tailored to the developer's needs.",
@@ -46,7 +65,7 @@ export const projectsContent: projectData[] = [
     link: {
       github: "https://github.com/omrawat23/guts",
       youtube: "",
-      live: "https://guts-mr2h.vercel.app/",
+      live: "https://gutss.vercel.app/",
     },
   },
   {
@@ -82,26 +101,7 @@ export const projectsContent: projectData[] = [
       live: "",
     },
   },
-  // {
-  //   title: "Frello",
-  //   description:
-  //     "Crafted Task Manager Application that delivers a dynamic platform for streamlined task management. Combining the power of organisation team-up, it presents users with an elegant and intuitive interface, facilitating effortless task handling.",
-  //   tags: [
-  //     "Typescript",
-  //     "Node.js",
-  //     "Next.js",
-  //     "Prisma",
-  //     "MySQL",
-  //     "ClerkAuth",
-  //     "TailwindCSS",
-  //     "Shadcn UI",
-  //   ],
-  //   link: {
-  //     github: "https://github.com/omrawat23/frello",
-  //     youtube: "",
-  //     live: "",
-  //   },
-  // },
+
 ];
 
 // {
