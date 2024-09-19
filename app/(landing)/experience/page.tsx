@@ -30,7 +30,7 @@ const ExperiencePage = () => {
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-center min-h-screen w-full px-4 py-16"
+      className="flex flex-col items-center justify-center min-h-screen w-full px-4 "
       initial="hidden"
       animate="visible"
       variants={containerVariants}

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import om from "@/public/om.jpeg";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -15,8 +14,8 @@ const OmAvatar = ({ onDesktop = true }: { onDesktop?: boolean }) => {
       transition={{ ease: "easeOut", duration: 2 }}
     >
       <Image
-        src={om}
-        alt={"om"}
+        src='/om.jpg'
+        alt='om'
         className="rounded-full shadow-lg hover:shadow-xl hover:border-2 hover:border-blue-500 transition-all duration-300"
         width={onDesktop ? 300 : 240}
         height={onDesktop ? 300 : 240}

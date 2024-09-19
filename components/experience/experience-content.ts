@@ -13,10 +13,9 @@ export const experienceContent = [
     duration: "Gurgaon",
     location: "May 2023 - August 2024",
     description: [
-      "Built flib’s website, focusing on user experience and responsiveness.",
-      "Worked closely with the design team to translate their concepts into a functional site.",
-      "Integrated Firebase to streamline the orders gateway for real-time data and management.",
-      "Coordinated project timelines and stakeholder communications to ensure timely delivery.",
+      "Engineered the flib web app , focusing on frontend architecture and performance optimization.",
+      "Enhanced SEO and significantly improved load times by optimizing images through lazy loading, leading to a more responsive user experience.",
+      "Utilized a modern tech stack, including Next.js 14, TypeScript, Hygraph (CMS), Tailwind CSS for styling, and Framer Motion for seamless animations.",
     ],
   },
   {

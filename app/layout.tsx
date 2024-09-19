@@ -1,5 +1,3 @@
-"use client";
-
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -8,9 +6,19 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import ActiveSectionContextProvider from "@/context/active-section-context";
-import ThemeToggle from "@/components/theme-toggle"; // Import the ThemeToggle component
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: siteConfig.title,
+  description: siteConfig.description,
+  icons: [
+    {
+      url: "/om.jpeg",
+      href: "/om.jpeg",
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -20,12 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          forcedTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
           <ActiveSectionContextProvider>
             <Navbar />
-            <ThemeToggle /> {/* Add the ThemeToggle component here */}
-            <main className="pt-16">{children}</main>
-            <Footer />
+            <main className="mt-16 min-h-full">{children}</main>
+            <Footer/>
           </ActiveSectionContextProvider>
         </ThemeProvider>
       </body>

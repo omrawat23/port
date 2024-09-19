@@ -30,12 +30,12 @@ const ProjectsPage = () => {
 
   return (
     <motion.div
-      className="my-8 w-full md:max-w-screen-2xl md:mx-auto md:px-16"
+      className="my-8 w-full md:max-w-screen-2xl md:mx-auto md:px-16 "
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
-      <motion.ul className="flex flex-col items-center justify-center w-full">
+      <motion.ul className="flex flex-col items-center justify-center w-full md:pt-8">
         {projectsContent.map((card, idx) => {
           return (
             <motion.li key={idx} variants={cardVariants}>

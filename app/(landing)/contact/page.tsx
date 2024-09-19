@@ -89,7 +89,7 @@ const BlogsPage = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center h-full px-4 md:px-6 lg:max-w-screen-xl lg:mx-auto mt-20 md:mt-20">
+    <div className="w-full flex flex-col items-center justify-center h-full px-4 md:px-6 md:mt-36 mt-28">
       <Toaster />
       <h1
         className={cn(
