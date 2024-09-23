@@ -13,7 +13,7 @@ export const projectsContent: projectData[] = [
   {
     title: "Feedbackify",
     description:
-      "Feedbackify is a SaaS product that allows users to integrate a feedback widget into their applications. It provides a seamless experience for collecting and managing user feedback, ensuring secure data handling and offering an intuitive dashboard for insights.",
+      "Feedbackify allows users to integrate a feedback widget into their applications. It provides a seamless experience for collecting and managing user feedback, ensuring secure data handling and offering an intuitive dashboard for insights.",
     tags: [
       "Next.js",
       "Typescript",
@@ -51,7 +51,7 @@ export const projectsContent: projectData[] = [
   {
     title: "MyBlog",
     description:
-      "This anime-themed Berserk blog app harnesses the MERN stack (MongoDB, Express.js, React, Node.js) along with Firebase for secure backend storage. The design draws inspiration from the dark and intense Berserk aesthetic, featuring a sleek, responsive interface that allows users to create, edit, and delete posts seamlessly. ",
+      "This blog app harnesses the MERN stack (MongoDB, Express.js, React, Node.js) along with Firebase for secure backend storage. The design features a sleek, responsive interface that allows users to create, edit, and delete posts seamlessly. ",
     tags: [
       "React",
       "Node.js",
