@@ -5,7 +5,7 @@ import {
   ExternalLink,
   GanttChartIcon,
   GithubIcon,
-  YoutubeIcon,
+  TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -26,22 +26,22 @@ const ProjectCard = ({ title, description, tags, link }: ProjectCardProps) => {
             <div className="flex items-center gap-4 ml-4">
               <Link
                 href={link.github}
-                className="text-emerald-600 hover:text-emerald-700 transition-all"
+                className="text-gray-400 hover:text-emerald-700 transition-all"
               >
                 <GithubIcon className="h-5 w-5" />
               </Link>
-              {link.youtube && (
+              {link.twitter && (
                 <Link
-                  href={link.youtube}
-                  className="text-red-600 hover:text-red-700 transition-all"
+                  href={link.twitter}
+                  className="text-blue-600 hover:text-blue-700 transition-all"
                 >
-                  <YoutubeIcon className="h-5 w-5" />
+                  <TwitterIcon className="h-5 w-5" />
                 </Link>
               )}
               {link.live && (
                 <Link
                   href={link.live}
-                  className="text-blue-500 hover:text-blue-700 transition-all"
+                  className="text-emerald-500 hover:text-emerald-700 transition-all"
                 >
                   <ExternalLink className="h-5 w-5" />
                 </Link>

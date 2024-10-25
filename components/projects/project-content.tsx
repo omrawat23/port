@@ -4,7 +4,7 @@ export type projectData = {
   tags: string[];
   link: {
     github: string;
-    youtube?: string;
+    twitter?: string;
     live?: string;
   };
 };
@@ -19,33 +19,32 @@ export const projectsContent: projectData[] = [
       "Typescript",
       "Drizzle ORM",
       "Supabase",
-      "ClerkAuth",
+      "NextAAuth",
       "TailwindCSS",
       "Shadcn UI",
     ],
     link: {
-      github: "https://github.com/omrawat23/feedbacify-landing.git",
-      youtube: "",
-      live: "https://feedbacify-landing.vercel.app/",
+      github: "https://github.com/omrawat23/feedback.git",
+      twitter: "",
+      live: "https://feedbackifyy.vercel.app",
     },
   },
   {
-    title: "CodeAssist",
+    title: "Spotifind",
     description:
-      "CodeAssist is an intelligent coding assistant designed to enhance developer productivity by leveraging AI-driven insights. It connects with the Gemini model to provide solutions, recommendations, and code snippets tailored to the developer's needs.",
+      "Spotifind allows you to connect to your Spotify account to generate custom playlists based on your musical taste, leveraging Gemini for contextual song analysis and the Spotify API for library access and playlist creation.",
     tags: [
       "Next.js",
       "React",
       "TypeScript",
-      "Drizzle ORM",
-      "PostgreSQL",
+      "Magic UI",
+      "Spotify API",
       "Gemini API",
-      "Clerk",
     ],
     link: {
-      github: "https://github.com/omrawat23/codeasssist/tree/main",
-      youtube: "",
-      live: "https://codeasssist.vercel.app/",
+      github: "https://github.com/omrawat23/playlist.git",
+      twitter: "",
+      live: "https://matchmakerr.vercel.app",
     },
   },
   {
@@ -64,26 +63,39 @@ export const projectsContent: projectData[] = [
     ],
     link: {
       github: "https://github.com/omrawat23/guts",
-      youtube: "",
-      live: "https://gutss.vercel.app/",
+      twitter: "https://x.com/omraw29/status/1842634045328629876",
+      live: "https://bloggifyy.vercel.app",
     },
   },
   {
-    title: "E-commerce store",
+    title: "Pokédex",
     description:
-      "A responsive e-commerce store using React and Node.js, featuring Stripe integration for secure payments. The store offers seamless navigation, a user-friendly interface, and efficient product management. The project aims to deliver a secure, engaging online shopping experience and a easy way to try on shoes from the comfort of your home by integrating DeepAr.",
+      "The Pokédex application is a responsive web app that allows users to explore and search for Pokémon using data fetched from the official PokeAPI. The app provides detailed information about each Pokémon, including its type, abilities, stats, and sprites. ",
+    tags: [
+      "React",
+      "PokeAPI",
+      "Tailwind CSS",
+    ],
+    link: {
+      github: "https://github.com/omrawat23/pokedex.git",
+      twitter: "https://x.com/omraw29/status/1845615754944635183",
+      live: "https://pokedex-pookie.vercel.app",
+    },
+  },
+  {
+    title: "Pookie-Tate",
+    description: "A site where you can chat with and listen to Andrew Tate sounding like a 'pookie'—and he’s even calling you 'pookie' too!",    
     tags: [
       "React",
       "Node.js",
       "Express.js",
-      "MongoDb",
-      "Redux toolkit",
-      "JWT",
+      "Neets AI",
+      "Gemini",
     ],
     link: {
-      github: "https://github.com/omrawat23/ai-shoes",
-      youtube: "",
-      live: "https://ai-shoes.vercel.app/",
+      github: "",
+      twitter: "https://x.com/omraw29/status/1846833912783233409",
+      live: "https://pookie-tate.vercel.app",
     },
   },
   {
@@ -97,7 +109,7 @@ export const projectsContent: projectData[] = [
     ],
     link: {
       github: "https://github.com/omrawat23/focusplay/tree/main",
-      youtube: "",
+      twitter: "",
       live: "",
     },
   },

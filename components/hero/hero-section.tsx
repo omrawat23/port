@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { GithubIcon, LinkedinIcon, Mail, Code, Briefcase, GraduationCap } from "lucide-react";
+import { GithubIcon, LinkedinIcon, Mail, Code, Briefcase, GraduationCap, FileText  } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -78,8 +78,9 @@ const HeroSection = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
             >
               <SocialIcon href="https://github.com/omrawat23" icon={GithubIcon} />
-              <SocialIcon href="mailto:omraw29@gmail.com" icon={Mail} />
               <SocialIcon href="https://linkedin.com/in/omrawat23" icon={LinkedinIcon} />
+              <SocialIcon href="mailto:omraw29@gmail.com" icon={Mail} />
+              <SocialIcon href="/omrawatxyz.pdf" icon={FileText} />
             </motion.div>
             <motion.p
               className={cn(
